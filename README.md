@@ -1,3 +1,12 @@
+# Project Summary
+
+ - The main goal of the project was to build an, automated investment advisory service, that is well diversified across various asset classes and that require little to no user interaction. The other goal is to match or exceed the risk adjusted performance of the market.
+ - Utilized Yahoo Finance API to download 10 years data for various ETFs across, different assets classes and different geographies.
+ - Categorized investor's risk tolerance level based on the responses to the risk assessment queries.
+ - Used Montecarlo simulation technique to generate various portfolios using random weights, and then plotted the efficient frontier, by using Scipy optimization to extract maximum returns for all given possible risk levels.
+ - Selected the optimal portfolio for the customer, given their risk score, and backtested the performance of this optimal portfolio, to review historical risk adjusted performance of the portfolio against the market performance.
+ - Finally using the Montecarlo simulation to forecast portfolio performance with 95% confidence interval across the next 3 years.
+
 ```python
 import plotly.express as px
 #import panel as pn
